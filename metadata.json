@@ -1,0 +1,6 @@
+{
+  "name": "PowerDrive Bearings - Sasi Automobiles",
+  "description": "Authorized e-commerce catalog for PowerDrive Bearings by Sasi Automobiles. Bearings for Lorries, Tractors, Two Wheelers, and Daily Appliances with instant WhatsApp ordering to +918331948888.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
