@@ -49,28 +49,30 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Apple-style Top Bar */}
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-black/5 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-12 flex items-center justify-between text-xs font-normal">
-          {/* Brand Mark (Zone 1) - Apple Style Standalone Logo */}
+          {/* Brand Mark (Zone 1) - Emblem + Wordmark */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center group text-left cursor-pointer transition-opacity hover:opacity-80 focus:outline-none"
+            className="flex items-center gap-2.5 group text-left cursor-pointer transition-opacity hover:opacity-85 focus:outline-none"
             aria-label="Sasi Automobiles - Home"
           >
             <img
-              src="/web images/sasi logo.png"
-              alt="Sasi Automobiles"
-              width={105}
-              height={36}
-              className="h-6 sm:h-7 w-auto object-contain select-none"
+              src="/web images/sasi logo emblem.webp"
+              alt="Sasi Automobiles Emblem"
+              width={32}
+              height={32}
+              className="h-7 w-7 object-contain select-none transition-transform group-hover:scale-105"
               fetchPriority="high"
               loading="eager"
               decoding="async"
-              onError={(e) => {
-                const target = e.currentTarget;
-                if (!target.src.endsWith('sasi-logo.webp')) {
-                  target.src = '/web images/sasi-logo.webp';
-                }
-              }}
             />
+            <div className="flex flex-col">
+              <span className="font-bold tracking-tight text-xs sm:text-sm text-[#111111] uppercase leading-none">
+                Sasi Automobiles
+              </span>
+              <span className="text-[9px] text-[#86868b] tracking-wider uppercase font-medium leading-tight mt-0.5">
+                Tanuku
+              </span>
+            </div>
           </button>
 
           {/* Desktop Navigation Links (Zone 2) */}

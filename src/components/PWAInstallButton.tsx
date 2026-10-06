@@ -25,8 +25,8 @@ export const PWAInstallButton: React.FC = () => {
       <button
         onClick={handleInstallClick}
         className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#f5f5f7] hover:bg-[#e8e8ed] text-[#1d1d1f] rounded-full text-xs font-medium transition-all active:scale-95 border border-black/5 cursor-pointer shadow-2xs"
-        title="Add PowerDrive shortcut to Home Screen"
-        aria-label="Add app shortcut to Home Screen"
+        title="Add Sasi Automobiles shortcut to Home Screen"
+        aria-label="Add Sasi Automobiles shortcut to Home Screen"
       >
         <Download className="w-3.5 h-3.5 text-[#0071e3]" />
         <span className="hidden sm:inline">Add to Home</span>
@@ -41,14 +41,14 @@ export const PWAInstallButton: React.FC = () => {
               <div className="flex items-center gap-3">
                 <img
                   src="/pwa-192x192.png"
-                  alt="PowerDrive"
+                  alt="Sasi Automobiles"
                   width={44}
                   height={44}
-                  className="w-11 h-11 rounded-2xl object-contain bg-[#001f3f] p-1.5 border border-black/5"
+                  className="w-11 h-11 rounded-2xl object-contain bg-white p-1 border border-black/5 shadow-2xs"
                 />
                 <div>
                   <h3 className="font-bold text-base text-[#1d1d1f]">Add to Home Screen</h3>
-                  <p className="text-xs text-[#86868b]">PowerDrive · Sasi Automobiles</p>
+                  <p className="text-xs text-[#86868b]">Sasi Automobiles</p>
                 </div>
               </div>
 
@@ -64,7 +64,7 @@ export const PWAInstallButton: React.FC = () => {
             {isIOS ? (
               <div className="space-y-3 pt-1 text-xs text-[#515154]">
                 <p className="leading-relaxed">
-                  Install PowerDrive on your iPhone or iPad for instant catalog lookup and fast WhatsApp ordering:
+                  Install Sasi Automobiles on your iPhone or iPad for instant catalog lookup and fast WhatsApp ordering:
                 </p>
 
                 <div className="space-y-2.5 bg-[#f5f5f7] p-3.5 rounded-2xl">
@@ -99,7 +99,7 @@ export const PWAInstallButton: React.FC = () => {
             ) : (
               <div className="space-y-3 pt-1 text-xs text-[#515154]">
                 <p className="leading-relaxed">
-                  Install PowerDrive on your phone, tablet, or desktop for 1-tap access:
+                  Install Sasi Automobiles on your phone, tablet, or desktop for 1-tap access:
                 </p>
 
                 <div className="space-y-2.5 bg-[#f5f5f7] p-3.5 rounded-2xl">

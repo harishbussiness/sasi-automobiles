@@ -106,12 +106,15 @@ export const AboutPowerDrivePage: React.FC<AboutPowerDrivePageProps> = ({
 
         <div className="flex items-center gap-2">
           <img
-            src="/web images/sasi logo.png"
-            alt="Sasi Automobiles"
-            className="h-6 w-auto object-contain"
+            src="/web images/sasi logo emblem.webp"
+            alt="Sasi Automobiles Emblem"
+            className="h-6 w-6 object-contain"
           />
+          <span className="text-xs font-bold tracking-tight text-[#1d1d1f] uppercase">
+            Sasi Automobiles
+          </span>
           <span className="text-black/30 font-light">|</span>
-          <span className="text-xs font-semibold tracking-wider text-[#1d1d1f] uppercase">
+          <span className="text-xs font-semibold tracking-wider text-[#0071e3] uppercase">
             PowerDrive Official
           </span>
         </div>

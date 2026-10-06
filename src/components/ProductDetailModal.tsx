@@ -89,12 +89,15 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           <span>Back</span>
         </button>
 
-        <div className="flex items-center">
+        <div className="flex items-center gap-2">
           <img
-            src="/web images/sasi logo.png"
-            alt="Sasi Automobiles"
-            className="h-5 sm:h-6 w-auto object-contain"
+            src="/web images/sasi logo emblem.webp"
+            alt="Sasi Automobiles Emblem"
+            className="h-5 sm:h-6 w-5 sm:w-6 object-contain"
           />
+          <span className="text-xs font-bold tracking-tight text-[#111111] uppercase hidden sm:inline">
+            Sasi Automobiles
+          </span>
         </div>
 
         <div className="flex items-center gap-2">

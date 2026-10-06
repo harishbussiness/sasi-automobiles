@@ -12,11 +12,11 @@ export default defineConfig(() => {
       tailwindcss(),
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['apple-touch-icon.png', 'pwa-192x192.png', 'pwa-512x512.png'],
+        includeAssets: ['apple-touch-icon.png', 'pwa-192x192.png', 'pwa-512x512.png', 'favicon.ico', 'favicon.png'],
         manifest: {
           id: '/',
-          name: 'PowerDrive Bearings - Sasi Automobiles',
-          short_name: 'PowerDrive',
+          name: 'Sasi Automobiles',
+          short_name: 'Sasi Automobiles',
           description: 'Official PowerDrive Bearings catalog & direct WhatsApp ordering by Sasi Automobiles.',
           theme_color: '#002244',
           background_color: '#ffffff',
