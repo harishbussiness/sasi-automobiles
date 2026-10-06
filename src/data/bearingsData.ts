@@ -558,6 +558,54 @@ export const BEARINGS_CATALOG: Bearing[] = [
     "mrp": 570
   },
   {
+    "id": "pdb-30305",
+    "partNumber": "30305",
+    "name": "30305",
+    "category": "tractor",
+    "categoryName": "Tractor & Agri",
+    "bearingType": "Tapered Roller Bearing",
+    "sealType": "Open",
+    "dimensions": {
+      "bore": 25,
+      "outerDiameter": 62,
+      "width": 18.25
+    },
+    "price": 261,
+    "priceOnEnquiry": false,
+    "wholesalePrice": 228,
+    "minWholesaleQty": 6,
+    "inStock": true,
+    "stockCount": 100,
+    "rating": 5,
+    "reviewsCount": 16,
+    "image": "/products images/30305.webp",
+    "popular": true,
+    "heavyDuty": true,
+    "applications": [
+      "Tractor Front Hub",
+      "Pinion Shaft",
+      "Automotive Differential",
+      "Rotavator Transmission"
+    ],
+    "compatibleBrands": [
+      "Mahindra",
+      "Swaraj",
+      "Tata Motors",
+      "Eicher",
+      "Sonalika"
+    ],
+    "specs": {
+      "material": "100% GCr15 High-Carbon Chrome Steel",
+      "clearance": "Normal Radial / C3",
+      "dynamicLoad": "35.8 kN",
+      "staticLoad": "38.5 kN",
+      "limitingSpeed": "7,200 RPM",
+      "lubrication": "High-Temp EP2 Grease / Gear Oil",
+      "weight": "0.26 kg"
+    },
+    "mrp": 326
+  },
+  {
     "id": "pdb-30207",
     "partNumber": "30207",
     "name": "30207",
