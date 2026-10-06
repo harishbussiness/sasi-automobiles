@@ -47,32 +47,30 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <>
       {/* Apple-style Top Bar */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-black/5 transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-12 flex items-center justify-between text-xs font-normal">
-          {/* Brand Mark (Zone 1) - Emblem + Wordmark */}
+      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/5 transition-colors">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between text-xs font-normal">
+          {/* Brand Mark (Zone 1) - Full Sasi Automobiles Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-2.5 group text-left cursor-pointer transition-opacity hover:opacity-85 focus:outline-none"
+            className="flex items-center group text-left cursor-pointer transition-opacity hover:opacity-85 focus:outline-none shrink-0 py-1"
             aria-label="Sasi Automobiles - Home"
           >
             <img
-              src="/web images/sasi logo emblem.webp"
-              alt="Sasi Automobiles Emblem"
-              width={32}
-              height={32}
-              className="h-7 w-7 object-contain select-none transition-transform group-hover:scale-105"
+              src="/web images/sasi logo.png"
+              alt="Sasi Automobiles"
+              width={160}
+              height={54}
+              className="h-8 sm:h-9 md:h-10 w-auto max-w-[150px] sm:max-w-[180px] object-contain select-none transition-all"
               fetchPriority="high"
               loading="eager"
               decoding="async"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.src.endsWith('sasi-logo.webp')) {
+                  target.src = '/web images/sasi-logo.webp';
+                }
+              }}
             />
-            <div className="flex flex-col">
-              <span className="font-bold tracking-tight text-xs sm:text-sm text-[#111111] uppercase leading-none">
-                Sasi Automobiles
-              </span>
-              <span className="text-[9px] text-[#86868b] tracking-wider uppercase font-medium leading-tight mt-0.5">
-                Tanuku
-              </span>
-            </div>
           </button>
 
           {/* Desktop Navigation Links (Zone 2) */}
@@ -89,7 +87,7 @@ export const Header: React.FC<HeaderProps> = ({
           </nav>
 
           {/* Right Action Icons (Zone 3) */}
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
             <PWAInstallButton />
 
             <button

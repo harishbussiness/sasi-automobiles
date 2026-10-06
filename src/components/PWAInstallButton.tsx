@@ -24,13 +24,12 @@ export const PWAInstallButton: React.FC = () => {
     <>
       <button
         onClick={handleInstallClick}
-        className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#f5f5f7] hover:bg-[#e8e8ed] text-[#1d1d1f] rounded-full text-xs font-medium transition-all active:scale-95 border border-black/5 cursor-pointer shadow-2xs"
+        className="inline-flex items-center gap-1.5 px-2 py-1 sm:px-3 sm:py-1 bg-[#f5f5f7] hover:bg-[#e8e8ed] text-[#1d1d1f] rounded-full text-xs font-medium transition-all active:scale-95 border border-black/5 cursor-pointer shadow-2xs"
         title="Add Sasi Automobiles shortcut to Home Screen"
         aria-label="Add Sasi Automobiles shortcut to Home Screen"
       >
         <Download className="w-3.5 h-3.5 text-[#0071e3]" />
         <span className="hidden sm:inline">Add to Home</span>
-        <span className="sm:hidden">App</span>
       </button>
 
       {/* Apple-Style Guide Modal for iOS & Browsers */}
